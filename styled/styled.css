@@ -87,7 +87,7 @@ ul,a{
 
 .header-address__container{
     display: flex;
-    margin-left: 344px;
+    margin-left: 324px;
 }
 
 .header_link{
@@ -108,16 +108,25 @@ ul,a{
 .email{
     margin-right: 50px;
 }
-.email::before{
-    content: '';
-    background-color: #2196F3;
-}
 
-.namer::before{
+.email::before{
+    display: inline-block;
+    margin-right: 10px;
     content: "";
     width: 16px;
     height: 12px;
-    background-image: url(/img/smartphone1.png);
+    background-image: url(/img/envelope.svg);
+    background-repeat: no-repeat;
+}
+
+.namer::before{
+    display: inline-block;
+    margin-right: 10px;
+    content: "";
+    width: 10px;
+    height: 16px;
+    background-image: url(/img/smartphone.svg);
+    background-repeat: no-repeat;
 }
 
 .hero_section{
@@ -168,6 +177,7 @@ ul,a{
 .remark_container{
     width: 1200px;
     margin: 0px 15px;
+    padding: 0px auto;
 }
 
 .ul_remark{
@@ -176,8 +186,33 @@ ul,a{
 }
 
 .remark{
-    height: 98px;
     width: 270px;
+}
+
+.remark::before{
+    margin-bottom: 30px;
+    display: inline-block;
+    content: "";
+    width: 270px;
+    height: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page1:nth-child(1)::before{
+    background-image: url(/img/anten.svg);
+}
+
+.page2:nth-child(2)::before{
+    background-image: url(/img/clock\ 1.svg);
+}
+
+.page3:nth-child(3)::before{
+    background-image: url(/img/diagram\ 1.svg);
+}
+
+.page4:nth-child(4)::before{
+    background-image: url(/img/astronaut\ 1.svg);
 }
 
 .remark_main{
@@ -255,7 +290,6 @@ ul,a{
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    height: 368px;
     width: 270px;
 }
 
