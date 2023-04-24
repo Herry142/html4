@@ -110,6 +110,10 @@ ul,a{
     padding: 200px 0px;
     display: flex;
     justify-content: center;
+    background: rgba(47, 48, 58, 0.4);
+    background-image: url(/img/main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero_container{
