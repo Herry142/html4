@@ -190,6 +190,8 @@ ul,a{
 }
 
 .remark::before{
+    background: #F5F4FA;
+    border-radius: 4px;
     margin-bottom: 30px;
     display: inline-block;
     content: "";
@@ -199,19 +201,19 @@ ul,a{
     background-repeat: no-repeat;
 }
 
-.page1:nth-child(1)::before{
+.remark:nth-child(1)::before{
     background-image: url(/img/anten.svg);
 }
 
-.page2:nth-child(2)::before{
+.remark:nth-child(2)::before{
     background-image: url(/img/clock\ 1.svg);
 }
 
-.page3:nth-child(3)::before{
+.remark:nth-child(3)::before{
     background-image: url(/img/diagram\ 1.svg);
 }
 
-.page4:nth-child(4)::before{
+.remark:nth-child(4)::before{
     background-image: url(/img/astronaut\ 1.svg);
 }
 
@@ -323,6 +325,7 @@ ul,a{
 .container_footer{
     width: 1200px;
     margin: 0px 15px;
+    position: relative;
 }
 
 .footer-address__container{
@@ -343,6 +346,36 @@ ul,a{
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
+}
+
+.footer_page{
+    position: absolute;
+    left: 301px;
+    bottom: 49px;
+    display: inline-block;
+}
+
+
+.footer_text_h2{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer_ul{
+    display: flex;
+}
+
+.element{
+    margin-right: 10px;
+}
+
+.element:nth-child(4){
+    margin: 0px;
 }
 
 .white_color{
