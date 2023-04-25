@@ -350,6 +350,7 @@ ul,a{
 
 .footer-address__container{
     margin-top: 20px;
+    display: inline-block;
 }
 
 .footer-address__container>.el{
