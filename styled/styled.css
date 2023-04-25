@@ -135,7 +135,7 @@ ul,a{
     display: flex;
     justify-content: center;
     background-image: rgba(47, 48, 58, 0.4);
-    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.drive.ru%2Fnews%2F5e7318b5ec05c487730000dd.html&psig=AOvVaw0XTU4dIidi38gs9zKctZJs&ust=1682524096189000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLjFh-ywxf4CFQAAAAAdAAAAABAI);
+    background-image: url(./img/main.jpg);
     background-repeat: no-repeat;
     background-position: center;
 }
