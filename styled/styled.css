@@ -372,14 +372,24 @@ ul,a{
 
 .element{
     margin-right: 10px;
+    height: 44px;
+    width: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: inline-block;
 }
 
 .element:nth-child(4){
     margin: 0px;
 }
 
-.element>a>img:hover,
-.element>a>img:focus{
+.element>a{
+    display: inline-block;
+    padding: 12px;
+}
+
+.element:hover,
+.element:focus{
     background-color: #2196F3;
 }
 
