@@ -357,9 +357,17 @@ ul,a{
 }
 
 .elem{
-    padding: 16px 32px;
     border: 1px solid #AFB1B8;
     border-radius: 4px; 
+}
+
+.elem>a>img{
+    padding: 16px 32px;
+}
+
+.compani:hover,
+.compani:focus{
+    fill: #FFFFFF;
 }
 
 .section_footer{
