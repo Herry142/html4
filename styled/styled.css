@@ -314,6 +314,22 @@ ul,a{
     text-align: center;
 }
 
+.web_container{
+    display: flex;
+}
+
+.web_container>svg{
+    width: 44px ;
+    height: 44px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-top: 16px;
+}
+
+.web_container>svg:nth-child(1){
+    margin-left: 32px;
+}
+
 .customers_section{
     display: flex;
     justify-content: center;
