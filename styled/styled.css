@@ -317,6 +317,7 @@ ul,a{
 .customers_section{
     display: flex;
     justify-content: center;
+    padding: 94px 0px 94px 0px;
 }
 
 .customers_container{
@@ -331,7 +332,18 @@ ul,a{
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+    margin-bottom: 50px;
+}
 
+.ul_customers{
+    display: flex;
+    justify-content: space-between;
+}
+
+.elem{
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px; 
 }
 
 .section_footer{
