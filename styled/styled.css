@@ -62,13 +62,16 @@ ul,a{
 
 .navigation_container{
     display: flex;
+    position: relative;
 }
 
 .navigation_container .el + .el{
     margin-left: 50px;
 }
 
-.nav_el{
+.nav_el_one,
+.nav_el_two,
+.nav_el_three{
     color: #212121;
     font-weight: 500;
     font-size: 14px;
@@ -76,18 +79,84 @@ ul,a{
     letter-spacing: 0.02em;
 }
 
-.nav_el:hover,
-.nav_el:focus{
-    color: #2196F3;
+.nav_el_one::before{
+    content: "";
+    width: 48px;
+    height: 4px;
+    background-color: #2196F3;
+    position: absolute;
+    left: 0;bottom: -31px;
+    border-radius: 4px;
+    transform: scaleX(0);
 }
 
-* .active{
+.nav_el_two::before{
+    content: "";
+    width: 72px;
+    height: 4px;
+    background-color: #2196F3;
+    position: absolute;
+    left: 96px;bottom: -31px;
+    border-radius: 4px;
+    transform: scaleX(0);
+}
+
+.nav_el_three::before{
+    content: "";
+    width: 64px;
+    height: 4px;
+    background-color: #2196F3;
+    position: absolute;
+    left: 218px;bottom: -31px;
+    border-radius: 4px;
+    transform: scaleX(0);
+}
+
+.nav_el_one:hover,
+.nav_el_two:hover,
+.nav_el_three:hover,
+.nav_el_one:focus,
+.nav_el_two:focus,
+.nav_el_three:focus,
+.nav_el_one:hover::before,
+.nav_el_two:hover::before,
+.nav_el_three:hover::before{
     color: #2196F3;
-  }
+    transform: scaleX(1);
+}
+
+.active1,
+.active2{
+    color: #2196F3;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.active1::before{
+    content: "";
+    width: 52px;
+    height: 4px;
+    background-color: #2196F3;
+    position: absolute;
+    left: 0;bottom: -31px;
+    border-radius: 4px;
+}
+
+.active2::before{
+    content: "";
+    width: 72px;
+    height: 4px;
+    background-color: #2196F3;
+    position: absolute;
+    left: 96px;bottom: -31px;
+    border-radius: 4px;
+}
 
 .header-address__container{
     display: flex;
-    margin-left: 324px;
+    margin-left: 323px;
 }
 
 .header_link{
@@ -262,6 +331,29 @@ ul,a{
 .ul_work{
     display: flex;
     justify-content: space-between;
+}
+
+.ul_work>li{
+    position: relative;
+}
+
+.el>div{
+    width: 100%;
+    background: rgba(47, 48, 58, 0.8);
+    padding: 27px 0px 27px 0px;
+    position: absolute;
+    top: 224px;
+
+}
+
+.el>div>p{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 .section_team{
