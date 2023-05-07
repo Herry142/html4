@@ -10,6 +10,7 @@ body{
     letter-spacing: 0.03em;
     margin: 0px;
     padding: 0px;
+    z-index: 1;
 }
 
 .invise{
@@ -645,8 +646,7 @@ ul,a{
     margin-right: 30px;
     margin-bottom: 30px;
     overflow: hidden;
-    transition: 5,5s;
-    
+    z-index: 1;
 }
 
 .card_filter:nth-child(3n){
@@ -659,25 +659,19 @@ ul,a{
 .card_filter,
 .hover_text{
     box-sizing: border-box;
-}
-
-.hover_text{
-    height: 294px;
-    width: 370px;
-    position: absolute;
+    overflow: hidden;
 }
 
 .main_img_card{
     width: 100%;
 }
 
-.hover_text{
-    background: rgba(33, 150, 243, 0.9);
-    padding: 63px 24px;
-}
-
-.hover_text:hover{
-    top: 265px;
+.hover_text>p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
 
 .main_txt_img{
